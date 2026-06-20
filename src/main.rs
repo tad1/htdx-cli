@@ -27,7 +27,7 @@ struct HtdxEntry {
 
 impl Indexable for HtdxEntry {
     fn strings(&self) -> Vec<String> {
-        vec![self.title.clone(), self.body.clone()]
+        vec![self.title.clone().replace("_", " "), self.body.clone()]
     }
 }
 

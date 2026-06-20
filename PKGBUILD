@@ -1,8 +1,8 @@
 # Maintainer: tad1 <aur@tad1.dev>
 
 pkgname=htdx
-pkgver=0.1.0
 pkgrel=0
+pkgver=0.1.1
 pkgdesc='A CLI tool for HTDX'
 url=''
 license=()
