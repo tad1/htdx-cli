@@ -1,0 +1,33 @@
+#compdef htdx
+
+_htdx_complete_files() {
+    local query_string="${(j: :)words[2,CURRENT-1]}"
+    if [[ -n "$query_string" ]]; then
+        query_string="${query_string} ${PREFIX}"
+    else
+        query_string="${PREFIX}"
+    fi
+
+    local -a files
+
+    files=(${(f)"$(htdx complete ${(q)query_string} 2>/dev/null)"})
+    if [[ ${#files} -eq 0 ]]; then
+        return 1
+    fi
+    
+    compstate[insert]=menu
+    compadd -U -Q -V htdx_matches -a files
+}
+
+_htdx() {
+    zstyle ":completion:*:${curcontext}:*" menu yes select
+    
+    _arguments \
+        '*: :_htdx_complete_files'
+}
+
+
+# Register this function with the command name
+compdef _htdx htdx
+
+
