@@ -15,8 +15,9 @@ A cli tool for [htdx](https://tad1.dev/notes/Projects/htdx/htdx) that allows to 
 - preview note?
 
 ## Use
-`htdx "my query string+<TAB>` - this will find all relevant notes, select a suggestion then press `Enter` to display a note
-![Screencast_20260621_014922.webm](https://github.com/user-attachments/assets/6bb5fa6d-2f67-4cb6-8917-082814310093)
+`htdx "my query string` + <kbd>Tab</kbd> - this will find all relevant notes, select a suggestion then press `Enter` to display a note
+<img width="400" height="auto" alt="htdx" src="https://github.com/user-attachments/assets/e3ec720f-542b-4445-9dce-f66d1e310c78" />
+
 
 #### Add/Remove notes
 notes are stores in `/usr/share/htdx/` any changes in this directory will affect the `htdx`
@@ -25,6 +26,7 @@ notes are stores in `/usr/share/htdx/` any changes in this directory will affect
 clone repo:
 ```sh
 git clone https://github.com/tad1/htdx-cli.git
+cd htdx-cli
 ```
 
 install as package
