@@ -79,12 +79,12 @@ fn main() {
                     }
                 } else {
                     println!(
-                        "File {} not found, use htdx <query> + TAB for search",
+                        "File {} not found, use htdx \"<query> + TAB for search",
                         &filename
                     );
                 }
             } else {
-                println!("Usage: htdx <query> + TAB for search")
+                println!("Usage: htdx \"<query> + TAB for search")
             }
         }
         Some(Commands::Complete { query }) => {
