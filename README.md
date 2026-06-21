@@ -16,6 +16,7 @@ A cli tool for [htdx](https://tad1.dev/notes/Projects/htdx/htdx) that allows to 
 
 ## Use
 `htdx "my query string` + <kbd>Tab</kbd> - this will find all relevant notes, select a suggestion then press `Enter` to display a note
+
 <img width="400" height="auto" alt="htdx" src="https://github.com/user-attachments/assets/e3ec720f-542b-4445-9dce-f66d1e310c78" />
 
 
